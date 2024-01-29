@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  node:
+    image: node:lts-slim
+    container_name: node
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
